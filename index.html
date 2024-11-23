@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>WellCome To My Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>WellCome To My Dynamic Resume Builder</h2>
+            <h2>I Hope You Like It</h2>
+            <h3>PERSONAL INFORMATION</h3>
+            <label>ENTER NAME:</label>
+            <input type="text" placeholder="Enter Your Name">
+            <label>ENTER YOUR FATHER NAME:</label>
+            <input type="text" placeholder="Enter Father Name">
+            <label>ENTER YOUR DATE OF BIRTH:</label>
+            <input type="date">
+            <label>ENTER YOUR CNIC NO:</label>
+            <input type="text" placeholder="CNIC No">
+            <label>ENTER YOUR DOMICILE:</label>
+            <input type="text" placeholder="Domicile">
+            <label>ENTER YOUR MARITAL STATUS:</label>
+            <input type="text" placeholder="Single or Married">
+            <label>ENTER YOUR RELIGION:</label>
+            <input type="text" placeholder="Religion">
+            <label>ENTER NATIONALITY:</label>
+            <input type="text" placeholder="Nationality">
+            <label>UPLOAD YOUR PHOTO:</label>
+            <input type="file">
+            <label>ABOUT ME:</label>
+            <textarea placeholder="About yourself"></textarea>
+            <label>ENTER YOUR EMAIL:</label>
+            <input type="email" placeholder="Enter email">
+            <label>ENTER YOUR PHONE NO:</label>
+            <input type="text" placeholder="Phone No">
+            <label>ENTER YOUR ADDRESS:</label>
+            <input type="text" placeholder="Address">
+            <label>ENTER YOUR LANGUAGE:</label>
+            <input type="text" placeholder="Languages Known">
+        </div>
+        <div class="section">
+            <h2>EDUCATION</h2>
+            <label>ENTER YOUR EDUCATION:</label>
+            <textarea placeholder="Enter education"></textarea>
+        </div>
+        <div class="section">
+            <h2>EXPERIENCE</h2>
+            <label>ENTER YOUR EXPERIENCE:</label>
+            <textarea placeholder="Enter Experience"></textarea>
+            <h2>SKILLS</h2>
+            <label>ENTER YOUR SKILLS (separate by commas):</label>
+            <textarea placeholder="e.g. HTML, CSS, JavaScript"></textarea>
+            <h2>PROJECTS</h2>
+            <label>ENTER YOUR PROJECTS:</label>
+            <textarea placeholder="Enter projects"></textarea>
+            <div class="buttons">
+                <button class="generate">GENERATE</button>
+                <button class="share">SHARABLE LINK</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Made By MUHAMMAD KHATEEB EJAZ 
+    </div>
+    <div class="terms">
+        <center><i class="fas fa-info-circle"></i> By Using Resume Builder You Agree To
+            <a href="#Terms" id="Terms-link">Terms</a> And 
+            <a href="#Privacy" id="Privacy-link">Privacy</a> </center>
+        
+    </div>
+
+    <!-- Terms Modal (Hidden by default) -->
+    <div id="terms" style="display:none; padding:20px; background-color:#fff; color:#333;">
+        <h3>Terms and Conditions</h3>
+        <p>These are the terms and conditions for using the Resume Builder. By using this tool, you agree to follow the terms outlined below:</p>
+        <ul>
+            <li>You may use the Resume Builder for personal and non-commercial purposes.</li>
+            <li>Do not share content that violates copyright, trademarks, or intellectual property.</li>
+            <li>We are not responsible for any errors or damages that result from using this tool.</li>
+        </ul>
+        <p><a href="#" onclick="document.getElementById('terms').style.display='none';">Close</a></p>
+    </div>
+
+    <!-- Privacy Policy Modal (Hidden by default) -->
+    <div id="privacy" style="display:none; padding:20px; background-color:#fff; color:#333;">
+        <h3>Privacy Policy</h3>
+        <p>Your privacy is important to us. This Privacy Policy outlines how we handle your personal information:</p>
+        <ul>
+            <li>We collect personal data such as name, contact info, and photo to generate your resume.</li>
+            <li>Your data will not be shared with third parties unless required by law.</li>
+            <li>We do not store your resume data permanently after it has been generated.</li>
+        </ul>
+        <p><a href="#" onclick="document.getElementById('privacy').style.display='none';">Close</a></p>
+    </div>
+
+    <script>
+        document.getElementById('terms-link').addEventListener('click', function() {
+            document.getElementById('terms').style.display = 'block';
+        });
+
+        document.getElementById('privacy-link').addEventListener('click', function() {
+            document.getElementById('privacy').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
